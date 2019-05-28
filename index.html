@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/myStyle.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="slide1-intro">
+					<h2>CSS Grid Layout</h2>
+					<img src="./src/F4cBF.jpg" alt="">
+					<div class="presentator">
+						<p>Anna Volkova-Kravchenko</p>
+						<p>anvolkravt@ya.ru</p>
+						<p>RSS 2019q1</p>
+					</div>	
+				</section>
+
+				<section class="slide2-past">
+					<section class="2_1-sad">
+							<q>A people without the knowledge of their past history, origin and culture is like a tree without roots</q><p> — Marcus Garvey</p>
+							<br>
+							<div class="sad_past">
+								<div class="past_list">
+										<p class="highlighted">THE PAST:</p>
+										<ul class="smaller-text">
+											<li>Tables</li>
+											<li>Floats</li>
+											<li>Positioning</li>
+											<li>Inline-block</li>
+											<br>
+											<li>Frameworks</li>
+											<li>Flexbox</li>
+										</ul>
+								</div>
+								<img class="crying" src="./src/cry.gif" alt="crying chocolate" width="450px">
+							</div>	
+					</section>
+					<section class="2_2-super">
+						<h3>His Majesty GRID</h3>
+						<p class="pre"><span class="highlighted">CSS Grid Layout (aka "Grid")</span> 
+							is a two-dimensional grid-based layout system</p>
+						<img src="./src/superman.jpg" alt="superman" width="280px">
+					</section>
+				</section>
+
+				<section class="slide3-browsers">
+					<h2>Browser Support</h2> 
+					<img class="browser-support" src="./src/Screenshot_2.png" alt="browser-support">
+				</section>
+				
+				<section class="slide4-terminology">
+					<section class="4_1-list">
+						<h3>Grid Terminology</h3>
+						<ul>
+							<li>container</li>
+							<li>item</li>
+							<li>line</li>
+							<li>track</li>
+							<li>gap</li>
+							<li>cell</li>
+							<li>area</li>
+						</ul>
+					</section>
+					<section class="4_2-illustration">
+						<div class="code">
+							<img src="./src/display_grid.png" alt="make_me_grid">
+							<img src="./src/disp.png" alt="display">
+						</div>
+						<img src="./src/together.png" alt="terminology">
+					</section>
+				</section>
+
+				<section class="slide5-properties">
+					<h3>Properties</h3>
+					<div class="properties">
+						<div class="for_container">
+							<p>for the Grid Container</p>
+							<ul class="items">
+								<li>display</li>
+								<li>grid-template</li>
+									<ul>
+										<li>grid-template-columns</li>
+										<li>grid-template-rows</li>
+										<li>grid-template-areas</li>
+									</ul>
+								<li>grid-gap</li>
+									<ul>
+										<li>grid-column-gap</li>
+										<li>grid-row-gap</li>
+									</ul>
+								<li>place-items</li>
+									<ul>
+										<li>justify-items</li>
+										<li>align-items</li>
+									</ul>
+								<li>place-content</li>
+									<ul>
+										<li>justify-content</li>
+										<li>align-content</li>
+									</ul>
+								<li>grid-auto-columns</li>
+								<li>grid-auto-rows</li>
+								<li>grid-auto-flow</li>
+							</ul>
+						</div>
+						<div class="for_items">
+							<p>for the Grid Items</p>
+							<ul class="items">
+								<li>grid-column</li>
+									<ul>
+										<li>grid-column-start</li>
+										<li>grid-column-end</li>
+									</ul>
+								<li>grid-row</li>
+									<ul>
+										<li>grid-row-start</li>
+										<li>grid-row-end</li>
+									</ul>
+								<li>grid-area</li>
+								<li>place-self</li>
+									<ul>
+										<li>justify-self</li>
+										<li>align-self</li>
+									</ul>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="slide6-reasons">
+					<h3>Why CSS Grid?</h3>
+					<ul>
+						<li>clean semantic markups</li>
+						<li>flexible and easy to change layouts</li>
+						<li>more complicated layouts as you can work with columns and rows simultaneously</li>
+						<li>the current support is at 92.36% of the global website traffic</li>
+					</ul>
+				</section>
+
+				<section class="slide7-example">
+					<section class="slide7_1 grid7">
+						<div class="code2">
+							<img class="code_img" src="./src/markup.png" alt="markup">
+							<img class="code_img" src="./src/container.png" alt="container">
+							<img class="code_img" src="./src/items.png" alt="items">
+						</div>
+						<img src="./src/result.png" alt="result" width="450px">
+					</section>
+				</section>
+
+				<section class="slide8-MQ">
+					<h3>Media Queries with CSS Grid</h3>
+					<div class="mq-flex">
+						<img src="./src/media-code.png" alt="">
+						<img src="./src/media.png" alt="">
+					</div>
+				</section>
+
+				<section class="slade9-nested">
+					<h3>
+						Nested Grid
+					</h3>
+					<img src="./src/nested_code.png" alt="">
+					<img src="./src/nested.png" alt="">
+				</section>
+
+				<section class="slide10-VS">
+					<section>
+							<h3>
+									Grids vs Others
+								</h3>
+								<div class="gifs">
+									<img class="margin" src="./src/13845714518713.gif" alt="">
+									<img src="./src/fail.gif" alt="" height="280px">
+								</div>
+					</section>
+
+					<section>
+						<h2>Use Grid!</h2>
+						<img src="./src/just.gif" alt="" width="400px">
+					</section>
+				</section>
+
+				<section>
+						<h2>Thanks for attention!</h2>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
