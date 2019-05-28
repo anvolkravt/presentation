@@ -20,13 +20,14 @@ Grid has own terminology: container, item, line, track, gap, cell, area.
 
 **Slide 4.2 Detailed**
 
-*To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.
-*All direct children become grid items.
-*Grid lines are the dividing lines that make up the structure of the grid. Lines can be horizontal or vertical. *They are referred to by number and can be named.
-*Track is a row or a column.
-*The spaces between columns and rows are called gaps.
-*Cell is the smallest grid unit. Conceptually it is like a table cell.
-*Area is a defined rectangle, which may consist of any number of cells.
+* To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.
+* All direct children become grid items.
+* Grid lines are the dividing lines that make up the structure of the grid. Lines can be horizontal or vertical. 
+* They are referred to by number and can be named. 
+* Track is a row or a column.
+* The spaces between columns and rows are called gaps.
+* Cell is the smallest grid unit. Conceptually it is like a table cell.
+* Area is a defined rectangle, which may consist of any number of cells.
 
 **Slide 5 Properties**
 
@@ -35,12 +36,13 @@ All this stuff doesn’t look easy, so let’s look at reasons to use Grid.
 
 **Slide 6 Reasons**
 
-•	clean semantic markups
-o	using grids doesn’t require enormous amount of extra wrappers
-o	content and layout are separated
-•	flexible and easy to change layouts
-•	more complicated layouts as you can work with columns and rows simultaneously
-•	the current support is at 92.36% of the global website traffic
+*	clean semantic markups
+*	using grids doesn’t require enormous amount of extra wrappers
+*	content and layout are separated
+*	flexible and easy to change layouts
+*	more complicated layouts as you can work with columns and rows simultaneously
+*	the current support is at 92.36% of the global website traffic
+
 Let’s see how it works.
 
 **Slide 7 Example**
