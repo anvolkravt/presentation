@@ -34,6 +34,10 @@
 						<p>anvolkravt@ya.ru</p>
 						<p>RSS 2019q1</p>
 					</div>	
+
+					<aside class="notes">
+						CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, that means it can handle both columns and rows. It completely change the way we design grid-based user interfaces. 
+					</aside>
 				</section>
 
 				<section class="slide2-past">
@@ -55,18 +59,30 @@
 								</div>
 								<img class="crying" src="./src/cry.gif" alt="crying chocolate" width="450px">
 							</div>	
+
+							<aside class="notes">
+								CSS has always been used to lay out web pages, but it never done a very good job of it. First, developers used tables, then floats, positioning, inline-block, but all of these methods were essentially hacks and left out a lot of important functionality. Frameworks and Flexbox helped out,but they are intended for simpler one-dimensional layouts, not complex two-dimensional ones.  
+							</aside>
 					</section>
 					<section class="2_2-super">
 						<h3>His Majesty GRID</h3>
 						<p class="pre"><span class="highlighted">CSS Grid Layout (aka "Grid")</span> 
 							is a two-dimensional grid-based layout system</p>
 						<img src="./src/superman.jpg" alt="superman" width="280px">
+
+						<aside class="notes">
+							Grid is the very first CSS module created specifically to solve the layout problems.  
+						</aside>
 					</section>
 				</section>
 
 				<section class="slide3-browsers">
 					<h2>Browser Support</h2> 
 					<img class="browser-support" src="./src/Screenshot_2.png" alt="browser-support">
+
+					<aside class="notes">
+						Since March 2017, most browsers shipped native, unprefixed CSS Grid support.
+					</aside>
 				</section>
 				
 				<section class="slide4-terminology">
@@ -81,6 +97,9 @@
 							<li>cell</li>
 							<li>area</li>
 						</ul>
+						<aside class="notes">
+							Grid has own terminology: container, item, line, track, gap, cell, area.
+						</aside>
 					</section>
 					<section class="4_2-illustration">
 						<div class="code">
@@ -88,6 +107,15 @@
 							<img src="./src/disp.png" alt="display">
 						</div>
 						<img src="./src/together.png" alt="terminology">
+						<aside class="notes">
+							To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.
+							All direct children become grid items.
+							Grid lines are the dividing lines that make up the structure of the grid. Lines can be horizontal or vertical. They are referred to by number and can be named.
+							Track is a row or a column.
+							The spaces between columns and rows are called gaps.
+							Cell is the smallest grid unit. Conceptually it is like a table cell.
+							Area is a defined rectangle, which may consist of any number of cells.
+						</aside>
 					</section>
 				</section>
 
@@ -146,6 +174,11 @@
 							</ul>
 						</div>
 					</div>
+
+					<aside class="notes">
+						We work with Grid Layout by applying CSS rules both to Grid Container and to Grid Items. Here you can see them. Points with sub points are shorthands. 
+						All this stuff doesn’t look easy, so let’s look at reasons to use Grid.
+					</aside>
 				</section>
 
 				<section class="slide6-reasons">
@@ -156,6 +189,14 @@
 						<li>more complicated layouts as you can work with columns and rows simultaneously</li>
 						<li>the current support is at 92.36% of the global website traffic</li>
 					</ul>
+					<aside class="notes">
+						•	clean semantic markups
+						o	using grids doesn’t require enormous amount of extra wrappers
+						o	content and layout are separated
+						•	flexible and easy to change layouts
+						•	more complicated layouts as you can work with columns and rows simultaneously
+						•	the current support is at 92.36% of the global website traffic
+					</aside>
 				</section>
 
 				<section class="slide7-example">
@@ -166,6 +207,12 @@
 							<img class="code_img" src="./src/items.png" alt="items">
 						</div>
 						<img src="./src/result.png" alt="result" width="450px">
+						<aside class="notes">
+							We have this pure semantic markup. First of all, define container as the Grid container by setting display property to grid. These are grid items. Now we should set columns and rows.  
+							The fr is a fraction unit, which represents a fraction of available space in the container. 
+							There can be used different units, including percents, pixels, rems, etc.
+							Here we give items names. And here we define their location. The syntax itself provides a visualization of the grid structure. 
+						</aside>
 					</section>
 				</section>
 
@@ -175,6 +222,12 @@
 						<img src="./src/media-code.png" alt="">
 						<img src="./src/media.png" alt="">
 					</div>
+
+					<aside class="notes">
+						Grid can place items in any order, which makes it super easy to rearrange layout with media queries. 
+						There is a media query for smaller screens. In the markup sidebar is earlier in the flow, but grids allow us to change it so simple.
+						Keep accessibility in mind when reordering elements! 
+					</aside>
 				</section>
 
 				<section class="slade9-nested">
@@ -183,6 +236,11 @@
 					</h3>
 					<img src="./src/nested_code.png" alt="">
 					<img src="./src/nested.png" alt="">
+					<aside class="notes">
+						Grids can be nested. All you need is simply display a grid item as grid. 
+						So, there box D is both grid item and grid container.
+						Also, any grid item can be defined as flex container. 
+					</aside>
 				</section>
 
 				<section class="slide10-VS">
@@ -194,16 +252,28 @@
 									<img class="margin" src="./src/13845714518713.gif" alt="">
 									<img src="./src/fail.gif" alt="" height="280px">
 								</div>
+
+								<aside class="notes">
+									CSS Grid Layout it is a really powerful tool. 
+								</aside>
 					</section>
 
 					<section>
 						<h2>Use Grid!</h2>
 						<img src="./src/just.gif" alt="" width="400px">
 					</section>
+
+					<aside class="notes">
+						Just use it!
+					</aside>
 				</section>
 
 				<section>
 						<h2>Thanks for attention!</h2>
+						
+						<aside class="notes">
+							Thanks for attention!
+						</aside>
 				</section>
 
 			</div>
